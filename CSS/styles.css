@@ -1,0 +1,109 @@
+:root {
+  --logo-web-color: rgb(77, 90, 229);
+  --primary-color: rgba(46, 47, 66, 1);
+  --secondary-color: rgba(67, 68, 85, 1);
+  --footer-text-color: rgba(244, 244, 253, 1);
+  --text-font-family: "Roboto", sans-serif;
+  --font-size: 16px;
+}
+
+* {
+  font-family: var(--text-font-family);
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--secondary-color);
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  color: var(--logo-web-color);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.logo::after {
+  content: "Studio";
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.nav-menu a {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.nav-menu:hover {
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--logo-web-color);
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  color: var(--footer-text-color);
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h3 {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.hero-section {
+  background-color: var(--primary-color);
+}
+
+.button-service {
+  background-color: var(--logo-web-color);
+  color: var(--footer-text-color);
+}
+
+.button-service:hover {
+  color: rgba(0, 0, 0, 0.15);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-section {
+  background-color: var(--primary-color);
+}
+
+.footer-section p {
+  color: var(--footer-text-color);
+}
+
+.footer-section .logo::after {
+  color: var(--footer-text-color);
+}
+
+.filters-section .button {
+  background-color: var(--footer-text-color);
+  color: var(--logo-web-color);
+  border: 1px;
+  border-color: rgba(231, 233, 252, 1);
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: var(--logo-web-color);
+  color: var(--footer-text-color);
+  cursor: pointer;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
