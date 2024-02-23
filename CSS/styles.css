@@ -3,6 +3,7 @@
   --primary-color: rgba(46, 47, 66, 1);
   --secondary-color: rgba(67, 68, 85, 1);
   --footer-text-color: rgba(244, 244, 253, 1);
+  --cornfower-color: rgba(231, 233, 252, 1);
   --text-font-family: "Roboto", sans-serif;
   --font-size: 16px;
 }
@@ -43,7 +44,7 @@ a:hover {
 }
 
 h1 {
-  font-family: "Raleway", sans-serif;
+  font-size: 56px;
   color: var(--footer-text-color);
   font-weight: 700;
 }
@@ -62,6 +63,8 @@ h3 {
 
 .hero-section {
   background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
 }
 
 .button-service {
@@ -106,4 +109,79 @@ a {
   color: var(--footer-text-color);
   cursor: pointer;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+.container {
+  width: 1200px;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  gap: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.menu {
+  width: 1400px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--cornfower-color);
+  padding: 25px;
+}
+
+.container h1 {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+
+button {
+  display: flex;
+}
+.hero-section {
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  padding: 120px;
+}
+
+.features ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  gap: 24px;
+}
+
+.what-are-we-doing h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.what-are-we-doing ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-team h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.our-team ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section .our-team {
+  background-color: var(--cornfower-color);
 }

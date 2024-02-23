@@ -12,37 +12,47 @@
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
 
-        <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/modern-normalize.css">
+
+    <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 
 <body>
-    <header class="global-header">
-        <a href="index.html" class="logo">Web</a>
-    
+  
+    <header>
+        <div class="container menu">
+             <a href="index.html" class="logo">Web</a>
+        
         <!-- Navigation Bar -->
-        <nav class="nav-menu">
+        <nav class="nav-bar">
             <ul>
                 <li><a href="index.html">Studio</a></li>
                 <li><a href="portofolio.html">Portofolio</a></li>
                 <li><a href="contacts.html">Contacts</li>
             </ul>
         </nav>
-    
+
+        <div class="nav-links">    
         <a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a>
         <a href="tel:+11(000)111-11-11" class="contact">+11 (000) 111-11-11</a>
-    </header>
+        </div>
+        </div>
+        </header>
 
     <main>
         <!-- 'Hero' section -->
-        <section class="hero-section">
+        <section class="section hero-section">
+            <div class="container">
             <h1>Effective Solutions
             for Your Business</h1>
 
             <button type="button" class="button-service">Order Service</button>
+            </div>
         </section>
 
-        <section>
+        <section class="section">
             <!-- 'Features' section -->
+            <div class="container features">
             <ul>
                 <li>
                     <h3>Strategy</h3>
@@ -62,10 +72,12 @@
                     <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                 </li>
             </ul>
+            </div>
         </section>
 
-        <section>
+        <section class="section">
             <!-- 'What are we doing' section -->
+            <div class="container what-are-we-doing">
             <h2>What are we doing</h2>
 
             <ul>
@@ -87,11 +99,13 @@
                     width="360" 
                     height="300">
                 </li>
-            </ul>          
+            </ul> 
+            </div>
         </section>
 
-        <section>
+        <section class="section">
             <!-- 'Our Team' section -->
+            <div class="container our-team">
             <h2>Our Team</h2>
 
             <ul>
@@ -128,9 +142,10 @@
                     <p>UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
 
-        <footer class="footer-section">
+        <footer class="section footer-section">
 
             <a href="index.html" class="logo">Web</a>
             
