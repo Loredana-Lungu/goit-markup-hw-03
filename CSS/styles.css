@@ -3,7 +3,8 @@
   --primary-color: rgba(46, 47, 66, 1);
   --secondary-color: rgba(67, 68, 85, 1);
   --footer-text-color: rgba(244, 244, 253, 1);
-  --cornfower-color: rgba(231, 233, 252, 1);
+  --cornflower-color: rgba(231, 233, 252, 1);
+  --cloud-color: rgba(244, 244, 253, 1);
   --text-font-family: "Roboto", sans-serif;
   --font-size: 16px;
 }
@@ -46,7 +47,7 @@ a:hover {
 h1 {
   font-size: 56px;
   color: var(--footer-text-color);
-  font-weight: 700;
+  margin: 0px;
 }
 
 h2 {
@@ -65,11 +66,15 @@ h3 {
   background-color: var(--primary-color);
   display: flex;
   justify-content: center;
+  height: 600px;
 }
 
 .button-service {
   background-color: var(--logo-web-color);
   color: var(--footer-text-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 56px;
 }
 
 .button-service:hover {
@@ -132,26 +137,35 @@ a {
   width: 1400px;
   display: flex;
   justify-content: space-around;
-  border-bottom: 1px solid var(--cornfower-color);
+  border-bottom: 1px solid var(--cornflower-color);
   padding: 25px;
 }
 
-.container h1 {
+.hero-container {
   display: flex;
   justify-content: center;
-  width: 500px;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.hero-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
 }
 
-button {
-  display: flex;
-}
-.hero-section {
+.hero-button {
+  height: 56px;
+  position: relative;
   display: flex;
   justify-content: center;
 }
 
 .section {
-  padding: 120px;
+  padding: 94px;
 }
 
 .features ul {
@@ -165,11 +179,16 @@ button {
 .what-are-we-doing h2 {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .what-are-we-doing ul {
   display: flex;
   justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  gap: 24px;
+  margin-top: 150px;
 }
 
 .our-team h2 {
@@ -180,8 +199,78 @@ button {
 .our-team ul {
   display: flex;
   justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  gap: 24px;
+  margin-top: 100px;
 }
 
-.section .our-team {
-  background-color: var(--cornfower-color);
+.our-team-section {
+  background-color: var(--cloud-color);
+}
+
+.our-team {
+  margin-bottom: 40px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: flex-start;
+  width: 265px;
+  margin: 0px;
+  padding: 0px;
+  gap: 16px;
+}
+
+.footer .logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer p {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filters ul {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  gap: 24px;
+}
+
+.filters-section {
+  display: flex;
+  justify-content: center;
+}
+
+.first-section ul,
+.second-section ul,
+.third-section ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  gap: 24px;
+}
+
+.first-section ul li,
+.second-section ul li,
+.third-section ul li {
+  border: 1px solid var(--cornflower-color);
+}
+
+.first-section {
+  margin-top: -120px;
+}
+
+.second-section {
+  margin-top: -130px;
+  margin-bottom: -130px;
+}
+
+.third-section {
+  margin-bottom: 40px;
 }
